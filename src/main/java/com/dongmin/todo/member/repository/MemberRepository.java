@@ -1,0 +1,7 @@
+package com.dongmin.todo.member.repository;
+
+import com.dongmin.todo.member.entity.Member;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface MemberRepository extends JpaRepository<Member, Long> {
+}
