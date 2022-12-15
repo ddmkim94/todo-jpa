@@ -15,24 +15,28 @@
     <script src="https://kit.fontawesome.com/585d621f74.js" crossorigin="anonymous"></script>
 </head>
 <style>
-    html, body {
-        height: 100%;
-    }
-
-    .container-box {
-        position: relative;
-        min-height: 100%;
-        padding-bottom: 150px;
-    }
-
-    header {
+    .sidebar {
+        width: 20%;
         background-color: #305D8E;
         color: #D2DCF1;
-        height: 100px;
+        text-align: center;
     }
 
-    header a:hover {
+    .sidebar a:hover {
         color: #D2DCF1;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+
+    .menu {
+        font-size: 18px;
+    }
+
+    section {
+        width: 80%;
     }
 
     a {
@@ -41,32 +45,29 @@
     }
 
     footer {
-        width: 100%;
-        height: 150px;
-        position: absolute;
-        bottom: 0;
+        height: 20vh;
         background-color: #305D8E;
-        color: #D2DCF1;
+        text-align: center;
     }
 </style>
 <body>
-<div class="container-box">
-    <header class="p-3 d-flex align-items-center">
-        <div class="w-100 d-flex justify-content-between align-items-center">
-            <a href="/" style="font-size: 36px;">
+<div class="d-flex" style="min-height: 80vh;">
+    <div class="sidebar p-3 d-flex flex-column align-items-center">
+        <div class="logo d-flex flex-column">
+            <a href="/" class="mb-5">
                 <span style="color: #EFB51A;">DM </span>
                 <span>ToDo</span>
             </a>
-            <div style="font-size: 18px;">
-                <a href="#">로그인</a>
-                <a href="#">회원가입</a>
+            <div class="menu d-flex w-100">
+                <a href="#" class="mx-2">로그인</a>
+                <a href="#" class="mx-2">회원가입</a>
             </div>
         </div>
-    </header>
-    <section class="content p-3" layout:fragment="content"></section>
-    <footer class="p-3" style="text-align: center;">
-        <span>Copyright &copy; DONGMIN 2022</span>
-    </footer>
+    </div>
+    <section class="d-flex p-3" layout:fragment="content"></section>
 </div>
+<footer>
+    <span>Copyright &copy; DONGMIN 2022</span>
+</footer>
 </body>
 </html>
