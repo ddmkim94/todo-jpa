@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:layout="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>DM ToDo</title>
+
+    <!-- 부트스트 5.2.3   -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
+
+    <!-- 폰트어썸   -->
+    <script src="https://kit.fontawesome.com/585d621f74.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    .sidebar {
+        width: 20%;
+        background-color: #305D8E;
+        color: #D2DCF1;
+        text-align: center;
+    }
+
+    .sidebar a:hover {
+        color: #D2DCF1;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+
+    .menu {
+        font-size: 18px;
+    }
+
+    section {
+        width: 80%;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    footer {
+        height: 20vh;
+        background-color: #305D8E;
+        text-align: center;
+    }
+</style>
+<body>
+<div class="d-flex" style="min-height: 80vh;">
+    <div class="sidebar p-3 d-flex flex-column align-items-center">
+        <div class="logo d-flex flex-column">
+            <a href="/" class="mb-5">
+                <span style="color: #EFB51A;">DM </span>
+                <span>ToDo</span>
+            </a>
+            <div class="menu d-flex w-100">
+                <a href="#" class="mx-2">로그인</a>
+                <a href="#" class="mx-2">회원가입</a>
+            </div>
+        </div>
+    </div>
+    <section class="d-flex p-3" layout:fragment="content"></section>
+</div>
+<footer>
+    <span>Copyright &copy; DONGMIN 2022</span>
+</footer>
+</body>
+</html>
